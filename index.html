@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Game Library</title>
+    
+</head>
+<body class="container">
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <div id="error"> </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-game">Game Title</label>
+                        <input type="text" class="form-control" id="new-game" placegolder="Game Title">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="console">Console</label>
+                        <select id="console" class="form-control" name="console">
+                            <option value="" disabled selected>Choose Console</option>
+                            <option value="PC">Computer/PC</option>
+                            <option value="Playstation">PlayStation</option>
+                            <option value="Switch">Switch</option>
+                            <option value="Xbox">XBox</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="purchase-date">Purchase Date</label>
+                        <input type="date" class="form-control" id="purchase-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="purchase-price">Price</label>
+                        <input type="number" class="form-control" id="purchase-price">
+                </div>
+            </div>
+            
+            <div>
+                <br>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+
+        </div>
+    </div>
+
+    <table id="list" class="table table-light table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Console</th>
+            <th>Date Purchased</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>
